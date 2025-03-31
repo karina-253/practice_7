@@ -1,0 +1,8 @@
+temperature = float(input())
+decreases = 0
+while temperature > 0:
+    temperature_1 = float(input())
+    if temperature_1 < temperature:
+        decreases += 1
+    temperature = temperature_1
+print(decreases-1)
