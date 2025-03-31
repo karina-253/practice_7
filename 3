@@ -1,0 +1,19 @@
+import math
+
+
+def full_square(num):
+    result = math.sqrt(num)
+    return result == int(result)
+
+
+while True:
+    try:
+        num = int(input('Введите число:'))
+        if full_square(num):
+            print('Число является полным квадратом')
+            break
+        else:
+            print('Число не является полным квадратом')
+    except ValueError:
+        print('Error')
+        
