@@ -1,0 +1,9 @@
+N = int(input())
+V = []
+edge = 1
+
+
+while edge ** 3 <= N:
+    V.append(edge ** 3)
+    edge += 1
+print(' '.join(map(str, V)))
